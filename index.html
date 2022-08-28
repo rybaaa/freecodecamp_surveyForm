@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>    
+    <h1 id = 'title'>Beginner Frontend Developers Survey Form</h1>
+    <p id = 'description'>Thank you for your time</p>
+    <form action="#" id = 'survey-form'>
+      <fieldset>
+        <label id = 'name-label'>Name <input type = 'text' id = 'name' placeholder = 'Your Name' required></label>
+        <label id = 'email-label'>Email <input type = 'email' id = 'email' placeholder = 'Your Email' required></label>
+        <label id = 'number-label'>Age <input type = 'number' id = 'number' min = '12' max = '100' placeholder = 'Your Age'></label>
+      </fieldset>
+      <fieldset>
+        <label>Who are you now?
+          <select id = 'dropdown'>
+            <option value="">Select one</option>
+            <option value="1">Full-time developer</option>
+            <option value="2">Full-time learner</option>
+            <option value="3">Student</option> 
+            <option value="4">Other</option> 
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p id = 'leftside'>Do you use online courses?</p>
+          <label><input type = 'radio' name = 'courses' class = 'inline' value = 'Yes'/>Yes</label>
+          <label><input type = 'radio' name = 'courses' class = 'inline' value = 'No' />No</label>
+          <label><input type = 'radio' name = 'courses' class = 'inline'  value = 'Recommended from friends'/>Recommended from friends</label>       
+      </fieldset>
+      <fieldset>
+        <p id = 'leftside'>How do you learn new material?</p>
+        <label><input type = 'checkbox' value = 'Online courses' class = 'inline'> Online courses</label>
+        <label><input type = 'checkbox' value = 'Offline courses' class = 'inline'> Offline courses</label>
+        <label><input type = 'checkbox' value = 'YouTube channels' class = 'inline'> YouTube channels</label>
+        <label><input type = 'checkbox' value = 'Books' class = 'inline'> Books</label>
+        <label><input type = 'checkbox' value = 'Documentation' class = 'inline'> Documentation</label>
+      </fieldset>
+      <fieldset>
+        <label>Any additional information or suggestions:
+          <textarea rows = '3 ' cols = '55' placeholder = 'What do you want to add?'></textarea>
+        </label>
+      </fieldset>
+      <input type = 'submit' id = 'submit'>
+    </form>
+  </body>
